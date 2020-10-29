@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <link href="utseende.css" rel="stylesheet">
+    <meta charset="utf-8">
+<body>
+
+    <br>
+    
+    <br>
+    
+    <br>
+    
+
+    
+<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fortellingen om deg</h1>
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;Spill av musikken nederst på siden, og nyt den fantastiske fortellingen!</h4>
+    
+  
+    <p id="fortelling">Det var en gang, i en landsby, langt langt vekke. Den russiske fiende hadde etablert seg bak fiendenes linjer. Napleonshæren måtte trekke seg unna etter slaget ved Berezina en kald November natt, og soldatene under ledelse av Napoleon slet med både kulde og mangel ressurser.</p>
+    
+<h2>Fyll inn ditt soldatnavn, din rang og velg kjønn.</h2>
+    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="Navn" placeholder="Navn">
+            <b id="g">Kjønn:</b>&nbsp;<select id="kjonn">
+            <option></option>
+                <option id="gutt" value="han">Gutt</option>
+                <option id="jente" value="hun">Jente</option>
+        </select>
+            <b id="g">Rang:</b>&nbsp;<select id="rang">
+        <option></option>
+                <option id="oberst" value="Oberst">Oberst</option>
+                <option id="kommandor" value="Kommandør">Kommandør</option>
+                <option id="sersjant" value="Sersjant">Sersjant</option>
+                <option id="sersjantmajor" value="Sersjantmajor">Sersjantmajor</option>
+                <option id="vingsersjant" value="Vingesersjant">Vingesersjant</option>
+    
+    
+    
+    </select>
+       
+    
+
+<button id="send"onclick="myFunction()">Send</button>
+    
+    
+    <p id="fortelling"><span class="klasse"></span> <span class="person"></span> lå halvvåken i det kalde gresset. Rundt seg så <span class="pronomen"></span> soldater strødd rundt på slagmarken, noen var døde men de fleste var bare slått ut av kulden og mangel på mat. General Roux kom bort til <span class="klasse"></span> <span class="person"></span>. «Hør her <span class="person"></span>. Vi må komme oss vekk og slå tilbake mot fienden. Det er flere muligheter. Dra enten mot vest, sør eller mot øst»</p> 
+    
+    
+    
+<script>
+    
+    let Navn;
+    let person;
+    let pronomen;
+    let kjonn;
+    let rang;
+    let klasse;
+    
+    
+    
+    
+function myFunction() {
+   Navn = document.getElementById("Navn").value;
+    console.log(Navn);
+    
+    person = document.getElementsByClassName("person");
+    
+    for(var i = 0; i < person.length; i++){
+    person[i].textContent = Navn;
+    }
+    
+    kjonn = document.getElementById("kjonn").value;
+    console.log(kjonn);
+    
+    pronomen = document.getElementsByClassName("pronomen");
+    
+    for(var i = 0; i < pronomen.length; i++){
+        pronomen[i].textContent = kjonn;
+    }
+    
+    rang = document.getElementById("rang").value;
+    console.log(rang);
+    
+    klasse = document.getElementsByClassName("klasse");
+    
+    for(var i = 0; i < klasse.length; i++){
+        klasse[i].textContent = rang;
+    }
+    
+    
+    
+    
+};
+    
+    
+    
+</script>
+    <h2>Velg en rømningsplan for å slå tilbake mot russerne!</h2>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b id="g">Retning:</b>&nbsp;<select id="retning">
+                <option></option>
+                <option id="sor" value="sørover">Sør</option>
+                <option id="ost" value="østover">Øst</option>
+                <option id="vest" value="vestover">Vest</option>
+        </select>
+    
+    <button id="send2" onclick="myFunction2()">Send</button>
+    
+    <p id="fortelling">"Utmerket valg <span class="klasse"></span>. Kom deg av gårde <span class="kurs"></span>, så får vi prøve å få slutt på denne galskapen!" sa Roux. "Oppfattet sjef!" svarte <span class="person"></span>. <span class="klasse"></span> <span class="person"></span> tok med seg en relativt stor gjeng med soldater, noen av de hestene som var igjen og dro <span class="kurs"></span>. Etter flere timer med gåing hadde <span class="klasse"></span> <span class="person"></span> og den lille hæren kommet fram til et fint område for å restituere. De hadde fått tilsendt en liten sanitetsgruppe som kom med både medisinske ressurser og mat. Nå måtte <span class="klasse"></span> <span class="person"></span> sette seg ned å planlegge en angrepsstrategi de kunne benytte seg av når russerne ankom. For en ting var sikkert og visst, russerne ga seg ikke, og jaktet desperat etter <span class="klasse"></span> <span class="person"></span> og den lille hæren.</p>
+    <script>
+    
+    let retning;
+    let kurs;
+    
+    function myFunction2() {
+        retning = document.getElementById("retning").value;
+    console.log(retning);
+    
+    kurs = document.getElementsByClassName("kurs");
+    
+    for(var i = 0; i < kurs.length; i++){
+        kurs[i].textContent = retning;
+    }
+    };
+    
+    </script>
+    
+<h2>Velg en angrepsstrategi for å gi et siste forsøk for å slå russerne!</h2>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b id="g">Angrepsstrategi:</b>&nbsp;<select id="strategi">
+                <option></option>
+                <option id="motitus" value="motitusangrep">Motitus</option>
+                <option id="feint" value="feintangrep">Feint</option>
+                <option id="flank" value="flankangrep">Flankrende manøvrer</option>
+                <option id="bakhold" value="bakholdsangrep">Bakholdsangrep</option>
+                <option id="tropp" value="troppstrømangrep">Troppstrøm</option>
+        </select>
+    
+    <button id="send3" onclick="myFunction3()">Send</button>
+    
+    <p id="fortelling">Det var nå det gjald. <span class="klasse"></span> <span class="person"></span> hadde valgt å gå for et <span class="angrep"></span> mot russerne, i et desperat forsøk for å klare å gå seirende ut av en lang og brutal krig med den russiske bjørnen. <span class="klasse"></span> <span class="person"></span> og hæren kjempet for harde livet i det som ble en brutal kamp mot russerne. Dagene gikk og etter hele 9 dager overga russerne seg. Dette var utrolig. Ingen hadde sett for seg at de skulle gå seirende ut av kampen mot de russiske soldatene. Takket være <span class="klasse"></span> <span class="person"></span> og med litt hjelp av et <span class="angrep"></span>, klarte den lille franske hæren å seire. <span class="klasse"></span> <span class="person"></span> ble hyllet da <span class="pronomen"></span> kom tilbake til riket, og <span class="pronomen"></span> ble husket som en av de største profilene innenfor Napoleonskrigene.</p>
+    
+<script>
+    
+    let strategi
+    let angrep
+    
+    function myFunction3(){
+        
+        strategi = document.getElementById("strategi").value;
+        console.log(strategi);
+        
+        angrep = document.getElementsByClassName("angrep");
+        
+        for(var i = 0; i < angrep.length; i++){
+            angrep[i].textContent = strategi;
+        }
+        
+    }
+    
+    
+    </script>
+    
+    </body>
+    
+<audio controls autoplay><source src="Two%20Steps%20From%20Hell%20-%20Protectors%20of%20the%20Earth%20(Invincible).mp3" type="audio/mpeg">
+    </audio>  
+    
+</html>

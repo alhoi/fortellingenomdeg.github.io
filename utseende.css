@@ -1,0 +1,62 @@
+body{
+    background-color: white;
+    font-family: sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(krig.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+
+    
+    
+    
+}
+
+#send{
+    background-color:cornflowerblue;
+    height: 35px;
+    width: 60px;
+    font-size: 16px;
+}
+
+#fortelling{
+    font-size: 23px;
+    line-height: 35px;
+    padding: 20px;
+    color: white;
+    
+}
+
+
+
+h2{
+    color: white;
+    margin-left: 20px;
+}
+
+h1{
+    color: white;
+    font-size: 80px;
+}
+
+h4{
+    color: white;
+}
+
+#g{
+    color: white;
+}
+
+#send2{
+    background-color:darkturquoise;
+    height: 35px;
+    width: 60px;
+    font-size: 16px;
+}
+
+#send3{
+    background-color:darkcyan;
+    height: 35px;
+    width: 60px;
+    font-size: 16px;
+}
